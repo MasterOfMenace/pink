@@ -8,26 +8,30 @@
 </head>
 <body>
   <header class="page-header">
-    <a href="#" class="page-header__logo">
-      <img src="../source/img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink logo" class="page-header__logo-image">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list nav">
-        <li class="nav__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a href="#">HTMLAcademy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__nav-wrapper">
+      <nav class="main-nav">
+        <a href="#" class="main-nav__logo">
+          <img src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink logo" class="page-header__logo-image">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list nav">
+          <div class="nav__wrapper">
+            <li class="nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">HTMLAcademy</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
     <section class="promo">
       <header class="promo__header">
         <h2 class="visually-hidden">Наше приложение</h2>
@@ -35,20 +39,22 @@
         <!-- <img src="./img/iphone-hand-mobile@1x.png" alt="Phone image" class="promo__image"> -->
       </header>
       <div class="promo__download">
-        <a href="#" class="promo__download-link button">Скачать приложение</a>
-        <ul class="promo__os-list os-list">
-          <li class="os-list__item">
-            <img src="http://placehold.it/40x50" alt="promole logo">
-          </li>
-          <li class="os-list__item">
-            <img src="http://placehold.it/40x50" alt="Android logo">
-          </li>
-          <li class="os-list__item">
-            <img src="http://placehold.it/40x50" alt="Windows logo">
-          </li>
-        </ul>
-        <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
-      </div>
+        <div class="promo__download-wrapper">
+          <a href="#" class="promo__download-link button">Скачать приложение</a>
+          <ul class="promo__os-list os-list">
+            <li class="os-list__item">
+              <img src="./img/logo-apple.svg" width="47" height="56" alt="Apple logo">
+            </li>
+            <li class="os-list__item">
+              <img src="./img/logo-android.svg" width="43" height="47" alt="Android logo">
+            </li>
+            <li class="os-list__item">
+              <img src="./img/logo-microsoft.svg" width="44" height="41" alt="Windows logo">
+            </li>
+          </ul>
+          <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+        </div>
     </section>
 
   </header>
