@@ -1,5 +1,7 @@
 .price {
+  min-height: 470px;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .price__slider {
@@ -7,4 +9,71 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.price__table {
+  width: 840px;
+  overflow: hidden;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+}
+
+.price__table-head {
+  background-color: #283645;
+  color: $color-white;
+}
+
+.price__type {
+  border-right: 2px solid $color-beige;
+  border-left: 2px solid $color-beige;
+  padding: 23px 90px;
+}
+
+.price__description {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.price__value {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.price__table-cell {
+  border-right: 2px solid $color-beige;
+  border-left: 2px solid $color-beige;
+  border-bottom: 2px solid $color-beige;
+  text-transform: uppercase;
+}
+
+.price__table-body {
+  text-align: start;
+  background-color: $color-white;
+}
+
+.price__table-cell {
+  padding: 22px;
+}
+
+.price__type--empty {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+    background-color: $color-beige;
+  }
+}
+
+.price__table-cell--first {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+  }
 }
