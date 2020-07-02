@@ -7,7 +7,7 @@
 }
 
 .upload__slogan-wrapper {
-  width: auto;
+  width: 100%;
   padding: 50px 10px;
   display: flex;
   flex-direction: column;
@@ -15,4 +15,45 @@
   box-sizing: border-box;
   background-color: white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 70px 0;
+  }
+}
+
+.upload__photo-edit {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.upload__img-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.upload__controls-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.upload__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.upload__button {
+  width: 100%;
+  padding: 20px 90px;
+  border: 3px solid $color-pink;
+  border-radius: 25px;
+  margin-bottom: 15px;
 }
