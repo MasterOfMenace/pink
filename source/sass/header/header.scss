@@ -29,13 +29,13 @@
 
 .page-header__title {
   margin: 0;
-  width: 180px;
+  width: 280px;
   margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
+    width: 500px;
     line-height: 50px;
     font-size: 50px;
   }

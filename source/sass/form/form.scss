@@ -7,11 +7,50 @@
 }
 
 .form__fieldset-wrapper {
-  background-color: #f2f2f2;
   width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
+  padding: 40px 0;
+}
+
+.form__fieldset-wrapper--personal {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.form__fieldset-wrapper--achieve {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.form__fieldset-wrapper--contacts {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.form__fieldset-wrapper--app {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.form__fieldset-wrapper--emotions {
+  @media (min-width: $tablet-width) {
+    order: 5
+  }
+}
+
+.form__fieldset-wrapper--achieve,
+.form__fieldset-wrapper--app {
+  background-color: $color-beige;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+  }
 }
 
 .form__fieldset {
@@ -21,7 +60,34 @@
   width: 280px;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
 }
+
+.form__input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:not(:last-child) {
+    padding-bottom: 50px;
+  }
+}
+
+// .form__fieldset--personal {
+//   @media (min-width: $tablet-width) {
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     .form__input--text {
+//       max-width: 560px;
+//     }
+//   }
+// }
 
 .form__legend {
   color: $color-pink;
@@ -29,10 +95,15 @@
   line-height: 30px;
 }
 
+.form__legend--contacts {
+  display: none;
+}
+
 .form__label {
   color: $color-pink;
   text-transform: uppercase;
   line-height: 30px;
+  padding-right: 20px;
 }
 
 .form__input {
@@ -41,6 +112,25 @@
   padding: 18px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.form__submit-wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
+}
+
+.form__submit-btn {
+  width: 100%;
+  background-color: #2aab6d;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 20px 0;
+  border: none;
 }
 
 .form__note {

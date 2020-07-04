@@ -4,24 +4,24 @@
   align-items: center;
 }
 
-.gallery__slogan {
-  // line-height: 20px;
-  // margin: 0;
-  // padding: 55px 35px;
-  // text-align: center;
-  width: 280px;
+// .gallery__slogan {
+//   // line-height: 20px;
+//   // margin: 0;
+//   // padding: 55px 35px;
+//   // text-align: center;
+//   width: 280px;
 
-  @media (min-width: $tablet-width) {
-    width: 470px;
-    font-size: 18px;
-    padding: 80px 0;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 470px;
+//     font-size: 18px;
+//     padding: 80px 0;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 600px;
-    padding: 90px 0;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 600px;
+//     padding: 90px 0;
+//   }
+// }
 
 .gallery__panoram {
   display: flex;
