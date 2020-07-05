@@ -36,21 +36,21 @@
   </header>
   <main class="page-main">
     <section class="contest">
-      <p class="contest__slogan slogan">Поделитесь своей историей и получите шанс выиграть ценный приз &ndash; 1000 миль на вашу бонусную карту!</p>
+      <p class="contest__slogan slogan">Поделитесь своей историей и получите шанс выиграть ценный приз &ndash; 1000 миль на вашу бонусную карту! <span class="contest__slogan-addition">Пожалуйста, заполните форму ниже:</span></p>
       <form action="#" class="contest__feedback form">
         <div class="form__fieldset-wrapper form__fieldset-wrapper--personal">
           <fieldset class="form__fieldset form__fieldset--personal">
             <div class="form__input-wrapper">
               <label for="surname" class="form__label">Фамилия:</label>
-              <input type="text" name="surname" id="surname" class="form__input form__input--text" placeholder="Укажите фамилию *">
+              <input type="text" name="surname" id="surname" class="form__input form__input--personal" placeholder="Укажите фамилию *">
             </div>
             <div class="form__input-wrapper">
               <label for="name" class="form__label">Имя:</label>
-              <input type="text" name="name" id="name" class="form__input form__input--text" placeholder="Введите ваше имя *">
+              <input type="text" name="name" id="name" class="form__input form__input--personal" placeholder="Введите ваше имя *">
             </div>
             <div class="form__input-wrapper">
               <label for="patronim" class="form__label">Отчество:</label>
-              <input type="text" name="patronim" id="patronim" class="form__input form__input--text" placeholder="Ну и отчество тоже *">
+              <input type="text" name="patronim" id="patronim" class="form__input form__input--personal" placeholder="Ну и отчество тоже *">
             </div>
           </fieldset>
         </div>
@@ -88,10 +88,14 @@
         <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
           <fieldset class="form__fieldset form__fieldset--contacts">
             <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+            <div class="form__input-wrapper form__input-wrapper--contacts">
               <label for="phone" class="form__label">Номер телефона</label>
               <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form__input-wrapper form__input-wrapper--contacts">
               <label for="email" class="form__label">Адрес почты</label>
               <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *">
+            </div>
           </fieldset>
         </div>
         <div class="form__fieldset-wrapper form__fieldset-wrapper--app">
