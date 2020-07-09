@@ -9,11 +9,13 @@
 <body>
   <header class="page-header">
     <div class="page-header__nav-wrapper">
-      <nav class="main-nav">
-        <a href="#" class="main-nav__logo">
-          <img src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink logo" class="page-header__logo-image">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--open">
+        <div class="main-nav__logo-wrapper">
+          <a href="#" class="main-nav__logo">
+            <img src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink logo" class="page-header__logo-image">
+          </a>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
         <ul class="main-nav__list nav">
           <div class="nav__wrapper">
             <li class="nav__item">
@@ -139,15 +141,15 @@
               <th class="price__type--empty"></th>
               <th class="price__type">
                 <p class="price__description">База</p>
-                <p class="price__value">1,99USD</p>
+                <p class="price__value">1,99 USD</p>
               </th>
               <th class="price__type price__type--flag">
                 <p class="price__description">Стандарт</p>
-                <p class="price__value">3,99USD</p>
+                <p class="price__value">3,99 USD</p>
               </th>
               <th class="price__type">
                 <p class="price__description">Анлим</p>
-                <p class="price__value">9,99USD</p>
+                <p class="price__value">9,99 USD</p>
               </th>
             </tr>
           </thead>
@@ -262,5 +264,19 @@
       </div>
     </section>
   </footer>
+  <script>
+    const toggle = document.querySelector('.main-nav__toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const classList = nav.classList;
+      if (classList.contains('main-nav--open')) {
+        classList.remove('main-nav--open');
+        classList.add('main-nav--closed');
+      } else {
+        classList.remove('main-nav--closed');
+        classList.add('main-nav--open');
+      }
+    })
+  </script>
 </body>
 </html>

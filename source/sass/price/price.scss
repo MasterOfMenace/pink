@@ -2,7 +2,8 @@
   // min-height: 470px;
   background-color: #f2f2f2;
   overflow: hidden;
-  padding: 100px 0;
+  // padding: 100px 0;
+  padding: 94px 0 50px 0;
   background-image: url('../../img/bg-triangle-white.svg');
   background-position: top;
   background-repeat: no-repeat;
@@ -33,6 +34,7 @@
   width: 840px;
   overflow: hidden;
   border-collapse: collapse;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -51,7 +53,7 @@
 .price__type {
   border-right: 2px solid $color-beige;
   border-left: 2px solid $color-beige;
-  padding: 23px 90px;
+  padding: 24px 0 24px 0;
 
   @media (min-width: $tablet-width) {
     padding: 19px 35px;
@@ -62,7 +64,7 @@
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
-  margin-bottom: 14px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -71,6 +73,7 @@
 
 .price__value {
   font-size: 24px;
+  line-height: 24px;
   text-transform: uppercase;
   font-weight: 300;
 
@@ -84,7 +87,7 @@
   border-left: 2px solid $color-beige;
   border-bottom: 2px solid $color-beige;
   text-transform: uppercase;
-  padding: 22px;
+  padding: 22px 20px 18px 22px;
 
   @media (min-width: $tablet-width) {
     padding: 19px;

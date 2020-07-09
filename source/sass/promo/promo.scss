@@ -26,11 +26,16 @@
 .promo__header {
   width: 320px;
   margin: 0 auto;
-  padding-top: 30px;
-  min-height: 360px;
+  padding-top: 23px;
+  min-height: 373px;
+  // background-image: url('../../img/iphone-hand-mobile@1x.png'), url('../../img/bg-back-mobile@1x.jpg');
+  // background-position: 50% 0, bottom left;
+  // background-repeat: no-repeat, no-repeat;
+  // background-size: 320px auto;
   background-image: url('../../img/iphone-hand-mobile@1x.png');
   background-position: bottom left;
   background-repeat: no-repeat;
+
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -48,6 +53,7 @@
   width: 255px;
   margin: 0 auto;
   text-align: center;
+  line-height: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -68,8 +74,8 @@
 
 .promo__download {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  // padding-top: 29px;
+  // padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 320px;
@@ -90,6 +96,7 @@
   // align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  padding: 30px 0;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -111,8 +118,9 @@
   color: white;
   text-align: center;
   line-height: 18px;
-  padding: 17px 30px 17px 30px;
+  padding: 13px 30px 17px 30px;
   box-sizing: border-box;
+  letter-spacing: -0.5px;
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
@@ -125,17 +133,17 @@
   width: 100%;
   list-style: none;
   margin: 0;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
   align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
 }
 
 .promo__description {
   // width: 280px;
   text-align: center;
+  line-height: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

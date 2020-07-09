@@ -10,6 +10,7 @@
   background-color: $color-grayblue;
   border-bottom: 1px solid #010101;
   border-top: 1px solid #485461;
+
   a {
     display: block;
     font-size: 18px;
@@ -17,7 +18,7 @@
     line-height: 32px;
     text-transform: uppercase;
     color: white;
-    padding: 18px 0 18px 0;
+    padding: 15px 0 15px 0;
   }
 
   @media (min-width: $desktop-width) {
