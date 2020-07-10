@@ -19,6 +19,15 @@
     text-transform: uppercase;
     color: white;
     padding: 15px 0 15px 0;
+
+    &:hover,
+    &:focus {
+      color: $color-pink;
+    }
+
+    &:active {
+      color: transparentize($color: $color-pink, $amount: 0.7);
+    }
   }
 
   @media (min-width: $desktop-width) {

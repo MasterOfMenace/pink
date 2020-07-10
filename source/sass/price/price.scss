@@ -51,12 +51,42 @@
 }
 
 .price__type {
+  position: relative;
   border-right: 2px solid $color-beige;
   border-left: 2px solid $color-beige;
   padding: 24px 0 24px 0;
 
   @media (min-width: $tablet-width) {
     padding: 19px 35px;
+  }
+}
+
+.price__type--flag {
+
+  &::before {
+    position: absolute;
+    left: -2px;
+    top: 0;
+    content: '';
+    width: 72px;
+    height: 74px;
+    background-image: url('../../img/bg-hit.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  &::after {
+    position: absolute;
+    left: 13px;
+    top: 16px;
+    content: 'ХИТ';
+    color: $color-white;
+    font-weight: 400;
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+    transform: rotate(-45deg);
   }
 }
 

@@ -44,6 +44,10 @@
   padding: 20px 20px 27px 20px;
   position: relative;
   background-color: rgba(0,0,0, 0.3);
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 0;
+  }
 }
 
 .main-nav--open .main-nav__logo-wrapper {
@@ -69,7 +73,8 @@
     // }
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     background-color: $color-pink;
     box-shadow: 0 10px $color-pink, 0 20px $color-pink;
   }
@@ -98,7 +103,9 @@
   }
 
   &:hover::before,
-  &:hover::after {
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
     background-color: $color-pink;
   }
 
@@ -142,6 +149,10 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    top: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
