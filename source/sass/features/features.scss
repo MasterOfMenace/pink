@@ -17,7 +17,8 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
-    padding-top: 60px;
+    padding-top: 50px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +36,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,8 +79,7 @@
   background-position:bottom -43px center;
 
   @media (min-width: $tablet-width) {
-    // width: 620px;
-    // margin: 0 auto;
+    padding-top: 75px;
     display: flex;
     justify-content: flex-end;
     background-image: url('../../img/iphone-screen-3-tablet@1x.png');
@@ -116,8 +118,11 @@
 }
 
 .features__item {
-  // padding-bottom: 45px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 245px;
@@ -151,8 +156,20 @@
   }
 }
 
+.features__description--research {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+    padding-right: 15px;
+  }
+}
+
 .features__research-wrapper {
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 94px;
+    padding-bottom: 65px;
+  }
 
   @media (min-width: $desktop-width) {
     background-color: $color-beige;
@@ -163,11 +180,12 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    width: 640px;
+    box-sizing: border-box;
     display: block;
-    width: 320px;
     text-align: start;
     margin: 0 auto;
-    padding-left: 300px;
+    padding-left: 320px;
   }
 
   @media (min-width: $desktop-width) {
@@ -184,6 +202,9 @@
   font-weight: 500;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
   @media (min-width: $desktop-width) {
     width: auto;
   }

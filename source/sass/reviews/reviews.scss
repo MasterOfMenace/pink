@@ -9,6 +9,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: auto;
+    padding-top: 65px;
   }
 }
 
@@ -30,6 +31,12 @@
   }
 }
 
+.reviews__list {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
 .reviews__item {
   margin: 0;
   display: flex;
@@ -43,6 +50,12 @@
   }
 }
 
+.reviews__text {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
 .reviews__author-name {
   font-size: 18px;
   font-weight: 500;
@@ -51,6 +64,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-bottom: 5px;
     font-size: 20px;
   }
 
