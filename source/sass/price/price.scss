@@ -10,7 +10,7 @@
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 90px 0 70px 0;
+    padding: 90px 0 35px 0;
   }
 }
 
@@ -30,11 +30,17 @@
   }
 }
 
+.price__slider-toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .price__table {
   width: 840px;
   overflow: hidden;
   border-collapse: collapse;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -57,7 +63,8 @@
   padding: 24px 0 24px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 19px 35px;
+    // padding: 19px 35px;
+    padding: 16px 35px 10px 35px;
   }
 }
 
@@ -120,7 +127,8 @@
   padding: 22px 20px 18px 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 19px;
+    // padding: 19px;
+    padding: 15px 0 12px 15px;
     width: 153px;
     box-sizing: border-box;
     text-transform: none;

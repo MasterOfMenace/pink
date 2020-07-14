@@ -8,8 +8,14 @@
   height: 6px;
   padding: 0;
   border: 0;
-  background-color: gray;
+  background-color: #bec2c7;
   border-radius: 50%;
   margin-right: 15px;
   cursor: pointer;
+}
+
+.slider__toggle--active {
+  box-sizing: content-box;
+  background-color: white;
+  border: 3px solid #283645;
 }
