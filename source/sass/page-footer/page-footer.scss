@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
-    padding-bottom: 12px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,10 +104,10 @@
   background-size: 100%, 100% auto;
 
   @media (min-width: $tablet-width) {
-    min-height: 375px;
+    min-height: 385px;
     background-image: url('../../img/bg-triangle-white-footer.svg'),
     url('../../img/bg-map-tablet@1x.jpg');
-    background-position: top, bottom 27% left;
+    background-position: top, bottom 30% left;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,12 +135,34 @@
 .page-footer__logo {
   display: block;
 
+  // .symbols path{
+  //   fill: #283645;
+  // }
+
+  // .glasses path {
+  //   fill: $color-pink
+  // }
+}
+
+.page-footer__logo-image {
   .symbols path{
     fill: #283645;
   }
 
   .glasses path {
     fill: $color-pink
+  }
+
+  &:hover {
+    .symbols path{
+      fill: $color-pink;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
   }
 }
 
