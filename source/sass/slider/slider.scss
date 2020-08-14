@@ -8,10 +8,18 @@
   height: 6px;
   padding: 0;
   border: 0;
-  background-color: #bec2c7;
+  background-color: transparentize(#283645, $amount: 0.7);
   border-radius: 50%;
   margin-right: 15px;
   cursor: pointer;
+
+  &:hover:not(.slider__toggle--active) {
+    background-color: transparentize(#283645, 0.4);
+  }
+
+  &:active:not(.slider__toggle--active) {
+    background-color: transparentize(#283645, 0.9);
+  }
 }
 
 .slider__toggle--active {

@@ -200,6 +200,14 @@
   svg path {
     fill: $color-pink;
   }
+
+  &:hover svg path {
+    fill: $color-grayblue;
+  }
+
+  &:active svg path {
+    fill: transparentize($color-grayblue, 0.7);
+  }
 }
 
 .social-list__link {
@@ -215,6 +223,18 @@
 
   svg path{
     fill: $color-pink;
+  }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: transparentize(#283645, 0.9);
+
+    svg path {
+      fill: transparentize($color-pink, 0.7);
+    }
   }
 }
 

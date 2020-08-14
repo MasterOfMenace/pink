@@ -125,6 +125,15 @@
   box-sizing: border-box;
   letter-spacing: -0.5px;
 
+  &:hover {
+    background-color: #ffffff;
+    color: $color-pink;
+  }
+
+  &:active {
+    color: transparentize($color-pink, 0.7);
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 21px;
     padding: 18px;
