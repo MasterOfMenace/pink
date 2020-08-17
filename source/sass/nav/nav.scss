@@ -33,6 +33,11 @@
   @media (min-width: $desktop-width) {
     background: none;
     border: none;
+
+    a {
+      text-transform: capitalize;
+      font-weight: 400;
+    }
   }
 }
 
@@ -42,7 +47,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    width: 650px;
+    width: 620px;
     justify-content: space-between;
   }
 }

@@ -73,7 +73,21 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    width: 147px;
+    height: 40px;
   }
-  width: 147px;
-  height: 40px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-image--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
 }
