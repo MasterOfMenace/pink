@@ -6,6 +6,10 @@
   // background-color: #f2f2f2;
   text-align: center;
   background-color: $color-white;
+
+  @media (min-width: $desktop-width) {
+    // background-color: #f2f2f2;
+  }
 }
 
 .features__slogan-wrapper {
@@ -142,21 +146,33 @@
 }
 
 .features__item--mood {
-  background-image: url("../../img/iphone-screen-1-desktop@1x.png");
-  background-position: top -4px left -26px;
-  background-repeat: no-repeat;
+  background-image: none;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/iphone-screen-1-desktop@1x.png");
+    background-position: top -4px left -26px;
+    background-repeat: no-repeat;
+  }
 }
 
 .features__item--world {
-  background-image: url("../../img/iphone-screen-2-desktop@1x.png");
-  background-position: top -4px left -16px;
-  background-repeat: no-repeat;
+  background-image: none;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/iphone-screen-2-desktop@1x.png");
+    background-position: top -4px left -16px;
+    background-repeat: no-repeat;
+  }
 }
 
 .features__item--friends {
-  background-image: url("../../img/iphone-screen-3-desktop@1x.png");
-  background-position: top -4px left -16px;
-  background-repeat: no-repeat;
+  background-image: none;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/iphone-screen-3-desktop@1x.png");
+    background-position: top -4px left -16px;
+    background-repeat: no-repeat;
+  }
 }
 
 .features__title {
@@ -185,11 +201,27 @@
     margin-bottom: 15px;
     padding-right: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+
+    margin-bottom: 36px;
+  }
 }
 
 .features__research-wrapper {
   background-color: $color-white;
 
+  @media (min-width: $desktop-width) {
+    background-color: $color-beige;
+    padding-bottom: 68px;
+  }
+
+}
+
+.features__research {
   @media (min-width: $tablet-width) {
     padding-top: 57px;
     padding-bottom: 36px;
@@ -213,7 +245,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $color-beige;
+    // background-color: $color-beige;
+    width: 960px;
+    padding: 25px 10px 0 10px;
+    box-sizing: border-box;
+
+    &::before {
+      width: 120px;
+      height: 120px;
+      font-size: 120px;
+      top: 205px;
+      left: 89px;
+      color: $color-pink;
+    }
   }
 }
 
@@ -221,8 +265,8 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     display: block;
+    position: relative;
 
     path {
       fill: #dedede;
@@ -232,15 +276,13 @@
     }
   }
 
-  // &::before {
-  //   position: absolute;
-  //   content: '24';
-  //   width: 50px;
-  //   height: 50px;
-  // }
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+  }
 }
 
-.features__research {
+.features__research-text {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -253,9 +295,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
-    padding-left: 370px;
-    box-sizing: border-box;
+    width: 575px;
+    padding-top: 92px;
+    // padding-left: 370px;
+    // box-sizing: border-box;
   }
 }
 
@@ -271,10 +314,19 @@
   }
   @media (min-width: $desktop-width) {
     width: auto;
+    margin-bottom: 22px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .features__research-link {
   color: $color-pink;
   text-decoration: underline;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
