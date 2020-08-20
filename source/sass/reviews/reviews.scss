@@ -101,27 +101,42 @@
   }
 }
 
-// .reviews__arrows {
-//   display: none;
-
-//   @media (min-width: $desktop-width) {
-//     display: block;
-//   }
-// }
-
 .slider__arrow {
   display: none;
+  border: none;
+  background: transparent;
 
   @media (min-width: $desktop-width) {
     display: block;
     position: absolute;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  svg {
+    fill: transparentize($color-grayblue, 0.7);
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: transparentize($color-grayblue, $amount: 0.4);
+    }
+  }
+
+  &:active {
+    svg {
+      fill: transparentize($color-grayblue, $amount: 0.9)
+    }
   }
 }
 
 .slider__arrow--prev {
-  left: 0;
+  left: -60px;
+  top: 143px;
 }
 
 .slider__arrow--next {
-  right: 0;
+  right: -60px;
+  top: 143px;
 }
