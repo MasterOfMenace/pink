@@ -60,6 +60,14 @@
   }
 }
 
+.reviews__quotes-icon {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .reviews__text {
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
