@@ -6,7 +6,7 @@
   background-color: #1d2631;
   background-image: url('../../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
-  background-position: bottom 270px center;
+  background-position: bottom -220px center;
   background-size: 320px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -37,12 +37,20 @@
   }
 }
 
+.page-header--index {
+  background-position: bottom 270px center;
+}
+
 .page-header__title {
   margin: 0;
   width: 280px;
   margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
+  min-height: 170px;
+  text-align: center;
+  padding-top: 25px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 500px;
