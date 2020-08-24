@@ -142,7 +142,7 @@
   border-left: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
   text-transform: uppercase;
-  padding: 22px 20px 18px 22px;
+  padding: 17px 20px 16px 22px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 0 10px 0;
@@ -168,7 +168,11 @@
 
 .price__available-icon {
   display: block;
-  margin: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+  }
 }
 
 .price__table-body {
@@ -183,6 +187,13 @@
     display: table-cell;
     background-color: $color-beige;
   }
+}
+
+.price__feature-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 26px;
 }
 
 .price__feature {
