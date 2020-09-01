@@ -30,15 +30,25 @@
   margin-bottom: 20px;
   width: 100%;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .gallery__image-link {
-  // display: flex;
+  display: block;
   width: 100%;
 }
 
 .gallery__panoram-image {
   width: 100%;
+  // height: 100%;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 510px;
+  }
 }
 
 .gallery__panoram-flag {
@@ -55,6 +65,10 @@
   text-transform: uppercase;
   font-weight: 500;
   font-size: 12px;
+
+  @media (min-width: $tablet-width) {
+    top: 58px;
+  }
 }
 
 .gallery__photos {
@@ -97,6 +111,14 @@
   min-height: 115px;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    // padding: 20px 27px 20px 27px;
+    padding: 25px 27px 23px 27px;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    min-height: 155px;
+  }
+
   @media (min-width: $desktop-width) {
     min-height: 150px;
   }
@@ -107,6 +129,9 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    min-height: unset;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,6 +149,18 @@
 
 .gallery__text {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.gallery__text--panoram {
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .gallery__likes {
@@ -142,5 +179,38 @@
     left: 1px;
     background-image: url('../../img/icon-heart.svg');
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 100%;
+    padding-right: 32px;
+    margin-top: auto;
+    box-sizing: border-box;
+
+    &::before {
+      left: unset;
+      right: 5px;
+    }
+  }
+}
+
+.gallery__likes--panoram {
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: auto;
+    // padding-right: 32px;
+    // padding-left: 0;
+
+    &::before {
+      // left: unset;
+      right: 2px;
+    }
+  }
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
 }
 

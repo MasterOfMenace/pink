@@ -110,15 +110,15 @@
       <div class="gallery__panoram">
         <a href="#" class="gallery__image-link">
           <picture>
-            <source media="(min-width: 660px)" srcset="./img/panorama-tablet@1x.jpg">
-            <img src="./img/panorama-mobile@1x.jpg" alt="Панорама дня" class="gallery__panoram-image">
+            <source media="(min-width: 660px)" srcset="./img/panorama-tablet.jpg 1x, ./img/panorama-tablet@2x.jpg 2x">
+            <img class="gallery__panoram-image" src="./img/panorama-mobile.jpg" srcset="/img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
           </picture>
         </a>
         <span class="gallery__panoram-flag">Панорама дня</span>
         <div class="gallery__photo-description--panoram gallery__photo-description">
           <p class="gallery__author">Анна <span class="gallery__time">(5 минут назад)</span></p>
-          <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="gallery__likes">Нравится: 215
+          <p class="gallery__text gallery__text--panoram">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="gallery__likes gallery__likes--panoram">Нравится: 215
           </p>
         </div>
       </div>
@@ -126,7 +126,10 @@
       <ul class="gallery__photos">
         <li class="gallery__item">
           <a href="#" class="gallery__image-link">
-            <img src="./img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография" class="gallery__img">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./img/photo-1-tablet.jpg 1x, ./img/photo-1-tablet@2x.jpg 2x">
+              <img class="gallery__img" width="280" height="180" src="./img/photo-1-mobile.jpg" srcset="./img/photo-1-mobile@2x.jpg 2x" alt="Фотография">
+            </picture>
           </a>
           <div class="gallery__photo-description">
             <p class="gallery__author">Левон <span class="gallery__time">(5 часов назад)</span></p>
@@ -136,7 +139,10 @@
         </li>
         <li class="gallery__item">
           <a href="#" class="gallery__image-link">
-            <img src="./img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография" class="gallery__img">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./img/photo-2-tablet.jpg 1x, ./img/photo-2-tablet@2x.jpg 2x">
+              <img class="gallery__img" width="280" height="180" src="./img/photo-2-mobile.jpg" srcset="./img/photo-2-mobile@2x.jpg 2x" alt="Фотография">
+            </picture>
           </a>
           <div class="gallery__photo-description">
             <p class="gallery__author">Антон <span class="gallery__time">(12 часов назад)</span></p>
@@ -146,7 +152,10 @@
         </li>
         <li class="gallery__item">
           <a href="#" class="gallery__image-link">
-            <img src="./img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография" class="gallery__img">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./img/photo-3-tablet.jpg 1x, ./img/photo-3-tablet@2x.jpg 2x">
+              <img class="gallery__img" width="280" height="180" src="./img/photo-3-mobile.jpg" srcset="./img/photo-3-mobile@2x.jpg 2x" alt="Фотография">
+            </picture>
           </a>
           <div class="gallery__photo-description">
             <p class="gallery__author">Борис <span class="gallery__time">(20 часов назад)</span></p>
@@ -156,7 +165,10 @@
         </li>
         <li class="gallery__item">
           <a href="#" class="gallery__image-link">
-            <img src="./img//photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография" class="gallery__img">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./img/photo-4-tablet.jpg 1x, ./img/photo-4-tablet@2x.jpg 2x">
+              <img class="gallery__img" width="280" height="180" src="./img/photo-4-mobile.jpg" srcset="/img/photo-4-mobile@2x.jpg 2x" alt="Фотография">
+            </picture>
           </a>
           <div class="gallery__photo-description">
             <p class="gallery__author">Сергей <span class="gallery__time">(25 часов назад)</span></p>
@@ -166,7 +178,10 @@
         </li>
         <li class="gallery__item">
           <a href="#" class="gallery__image-link">
-            <img src="./img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография" class="gallery__img">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./img/photo-5-tablet.jpg 1x, ./img/photo-5-tablet@2x.jpg 2x">
+              <img class="gallery__img" width="280" height="180" src="./img/photo-5-mobile.jpg" srcset="./img/photo-5-mobile@2x.jpg 2x" alt="Фотография">
+            </picture>
           </a>
           <div class="gallery__photo-description">
             <p class="gallery__author">Максим <span class="gallery__time">(40 часов назад)</span></p>
@@ -176,7 +191,10 @@
         </li>
         <li class="gallery__item">
           <a href="#" class="gallery__image-link">
-            <img src="./img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография" class="gallery__img">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./img/photo-6-tablet.jpg 1x, ./img/photo-6-tablet@2x.jpg 2x">
+              <img class="gallery__img" width="280" height="180" src="./img/photo-6-mobile.jpg" srcset="./img/photo-6-mobile@2x.jpg 2x" alt="Фотография">
+            </picture>
           </a>
           <div class="gallery__photo-description">
             <p class="gallery__author">Надежда <span class="gallery__time">(45 часов назад)</span></p>
@@ -195,7 +213,10 @@
       </div>
       <div class="upload__photo-edit">
         <div class="upload__img-wrapper">
-          <img src="./img/photo-road-mobile@1x.jpg" width="280" height="375" alt="Превью загружаемой фотографии" class="upload__img-preview">
+          <picture>
+            <source media="(min-width: 660px)" srcset="./img/photo-7-tablet.jpg 1x, ./img/photo-7-tablet@2x.jpg 2x">
+            <img class="upload__img-preview" width="280" height="375" src="./img/photo-7-mobile.jpg" srcset="./img/photo-7-mobile@2x.jpg 2x" alt="Превью загружаемой фотографии" >
+          </picture>
         </div>
         <div class="upload__controls-wrapper">
           <ul class="upload__controls">

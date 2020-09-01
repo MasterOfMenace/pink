@@ -23,7 +23,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding: 70px 0;
+    padding: 44px 0;
+    padding-bottom: 70px;
+    line-height: 30px;
   }
 }
 
@@ -35,6 +37,7 @@
     width: 620px;
     display: flex;
     flex-direction: row;
+    padding-top: 70px;
   }
 
   @media (min-width: $desktop-width) {
